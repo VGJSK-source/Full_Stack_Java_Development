@@ -1,0 +1,24 @@
+import java.util.*;
+import java.time.LocalDate;
+import java.time.Period;   
+public class DobCalcul {
+    public static void main(String[] args) {
+        int y= Integer.parseInt(args[0]);
+        int m= Integer.parseInt(args[1]);
+        int d= Integer.parseInt(args[2]);
+        
+    
+        
+       LocalDate birthdate =  LocalDate.of(y, m, d);
+       LocalDate presentdate = LocalDate.now(); 
+       int age = Period.between(birthdate,presentdate).getYears();
+
+        System.out.println(presentdate );
+        System.out.println(birthdate );
+        System.out.println(age );
+
+
+
+    }
+    
+}
