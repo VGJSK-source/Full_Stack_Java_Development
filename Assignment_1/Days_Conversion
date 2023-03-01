@@ -1,0 +1,10 @@
+public class ConvertDays {
+    public static void main(String[] args) {
+        int d = Integer.parseInt(args[0]);
+        int y=d/365;
+        int rd=d-y*365;
+        int m= rd/30;
+        int nd= rd-m*30;
+        System.out.println("Year = "+y+", Month = "+m +", Days = "+nd);
+    }
+}
