@@ -1,2 +1,0 @@
-# Full_Stack_Java_Development
-Assignment_1
